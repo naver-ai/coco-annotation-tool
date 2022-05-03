@@ -1,0 +1,232 @@
+<!--
+  COCO Image Labelling Tool - FE
+  Copyright (c) 2022-present NAVER Corp.
+  MIT License
+-->
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<section class="container" id="SurveyLink">
+  <div class="row" id="workContent">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <p>&nbsp;</p>
+
+      <h4>Please read the instruction carefully (takes less than 3 minutes).</h4>
+
+      <h4>Time spent reading the instruction is reflected in the reward.</h4>
+
+      <p>&nbsp;</p>
+
+      <h4>You can participate in our experiment (group of HITs)&nbsp;only once.</h4>
+
+      <p>We will not allow each worker&nbsp;to complete and submit more than one of our HITs.</p>
+
+      <p>&nbsp;</p>
+
+      <h4>Instructions</h4>
+
+      <p>- This HIT contains <strong>10 pages</strong> of image selection tasks.</p>
+
+      <p>- Each page contains a task for <strong>1 object class name</strong> and <strong>48 candidate images</strong>.
+      </p>
+
+      <p>- Select <strong>all</strong> images corresponding to the shown object class name.</p>
+
+      <p>- If unsure, you can use the <strong>Wikipedia link</strong>&nbsp;to learn about the object class.</p>
+
+      <p>- When you are done with a page, click <strong>submit</strong> and move on to the next page.</p>
+
+      <p>&nbsp;</p>
+
+      <h4>Interface</h4>
+
+      <p><img src="https://hybridsupervision-image-net.s3.us-east-2.amazonaws.com/mturk-readme/selection.png"
+          style="border:1px solid black" width="300" /></p>
+
+      <p>- Selected images will appear with blue borders.</p>
+
+      <p>- If necessary, click on the image again to undo the selection.<br />
+        <br />
+        <img
+          src="https://hybridsupervision-image-net.s3.us-east-2.amazonaws.com/mturk-readme/drawing_negative_sample.png"
+          style="border:1px solid black" width="200" /> <img
+          src="https://hybridsupervision-image-net.s3.us-east-2.amazonaws.com/mturk-readme/drawing_positive_sample.png"
+          style="border:1px solid black" width="200" /></p>
+
+      <p>- Do not select drawings or paintings.<br />
+        &nbsp;</p>
+
+      <h4>Red pointer</h4>
+
+      <p><img src="https://hybridsupervision-image-net.s3.us-east-2.amazonaws.com/mturk-readme/red_what.png"
+          style="border-width: 1px; border-style: solid; border-color: black;" width="200" /></p>
+
+      <p>- Red pointer indicates the current position of the mouse cursor.</p>
+
+      <p>- Red pointer will be fixed at the position of the image where you click.</p>
+
+      <p>- When you click on the image again to de-select it, the red pointer will also be released.</p>
+
+      <p><img src="https://hybridsupervision-image-net.s3.us-east-2.amazonaws.com/mturk-readme/red_bad.png"
+          style="border-width: 1px; border-style: solid; border-color: black;" width="200" /> <img
+          src="https://hybridsupervision-image-net.s3.us-east-2.amazonaws.com/mturk-readme/red_good.png"
+          style="border-width: 1px; border-style: solid; border-color: black;" width="200" /></p>
+
+      <p>- Try to click on the object of interest.</p>
+
+      <p><img src="https://hybridsupervision-image-net.s3.us-east-2.amazonaws.com/mturk-readme/red_multi.png"
+          style="border-width: 1px; border-style: solid; border-color: black;" width="300" /></p>
+
+      <p>- When there are multiple objects, click on one of them.</p>
+
+      <p>&nbsp;</p>
+
+      <h4><span style="color: inherit;">Important n</span><span style="color: inherit;">otes on rewards</span></h4>
+
+      <p>- The annotations are performed on a separate web page linked below.</p>
+
+      <p>- Click on the link to open the page and complete 10 pages of tasks.</p>
+
+      <p>- <span style="color:#FF0000;"><strong>DO NOT CLOSE</strong></span> the current page during the annotation.</p>
+
+      <p>- When you complete the tasks, you will get a <span style="color:#FF0000;"><strong>unique survey code
+            (e.g.&nbsp;A2F4C9​)</strong></span>.</p>
+
+      <p>- Put the survey code in the form at the bottom of this page to claim the reward.</p>
+
+      <p>-&nbsp;You may be blocked from this task if the quality of the submission does not meet the&nbsp;minimal
+        standard.</p>
+
+      <p>&nbsp;</p>
+
+      <h4>Content warnings</h4>
+
+      <p style="color: red;"><span style="color:#000000;">Some of the images may include ​nudity and other disturbing
+          contents (e.g. snakes, insects, and birds).</span></p>
+
+      <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+      <!-- Submit Form -->
+
+      <h3 style="text-align: center;"><strong>&gt;&gt;&nbsp;<a href="javascript:notYet()"
+            id="annotation_tool_anchor">Link to annotation task <img
+              src="https://img.icons8.com/material-two-tone/24/000000/external-link.png" /></a>&nbsp;(new tab)
+          &lt;&lt;<a href="javascript:notYet()">&nbsp;</a>&nbsp;</strong></h3>
+
+      <p id="error_message" style="text-align: center; color: red;">&nbsp;</p>
+
+      <p style="text-align: center;">&nbsp;</p>
+
+      <div class="form-group"><label for="surveycode">Upon finishing the task, provide the survey code here and click
+          &quot;submit&quot; to claim reward.</label><input class="form-control" id="surveycode" name="surveycode"
+          placeholder="e.g. A2F4C9" required="" type="text" /></div>
+      <!-- End input from Worker -->
+    </div>
+  </div>
+  <!-- End Survey Link Layout -->
+</section>
+<!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries -->
+<!-- External CSS references -->
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+  integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" />
+<!-- Open internal style sheet -->
+<style type="text/css">
+  #collapseTrigger {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+  }
+
+  #submitButton {
+    white-space: normal;
+  }
+
+  .image {
+    margin-bottom: 15px;
+  }
+
+  /* CSS for breaking long words/urls */
+  .dont-break-out {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+</style>
+<script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+<!-- Close internal style sheet -->
+<!-- External JS references -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+  integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"
+  integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script>
+<!-- Open internal javascript -->
+<script>
+  $(document).ready(function () {
+
+    // Configuration 'annotationToolLink', 'version'
+    var annotationToolLink = "${toolLink}"
+    var version = "${version}"
+    var hitDatasetName = "${hitDatasetName}"
+    var cocoHitId = "${cocoHitId}"
+
+    var assignmentId = turkGetParam("assignmentId")
+    var workerId = turkGetParam("workerId")
+    var hitId = turkGetParam("hitId")
+    var submitAnchor = document.getElementById("annotation_tool_anchor")
+
+    // Validate and set link if validated
+    if (assignmentId === undefined)
+      displayErrorMessage("Can't find 'assignmentId'. Try again please.");
+    else if (workerId === undefined)
+      displayErrorMessage("Can't find 'workerId'. Try again please.");
+    else if (hitId === undefined)
+      displayErrorMessage("Can't find 'hitId'. Try again please.");
+    else {
+      submitAnchor.setAttribute("href", annotationToolLink +
+        "?assignmentId=" + assignmentId +
+        "&?version=" + version +
+        "&workerId=" + workerId +
+        "&hitId=" + hitId +
+        "&hitDatasetName=" + hitDatasetName +
+        "&cocoHitId=" + cocoHitId
+      )
+      submitAnchor.setAttribute("target", "_blank");
+    }
+
+  });
+
+  /**
+   * Gets a URL parameter from the query string
+   */
+  function turkGetParam(name, defaultValue) {
+    var regexS = "[\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var tmpURL = window.location.href;
+    var results = regex.exec(tmpURL);
+    if (results == null) {
+      return defaultValue;
+    } else {
+      return results[1];
+    }
+  }
+
+  /**
+   * Display error message and disabling annotation tool link button
+   */
+  function displayErrorMessage(msg) {
+    document.getElementById("error_message").innerText = msg;
+    document.getElementById("annotation_tool_anchor").style.opacity = 0.5;
+  }
+
+  /**
+   * Alert when link anchor is disabled and user clicked
+   */
+  function notYet() {
+    alert("The link is not available, refresh and try again");
+  }
+</script><!-- Close internal javascript -->
