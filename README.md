@@ -1,4 +1,4 @@
-# COCO Image Labelling Tool - Frontend (FE)
+# COCO Image Labelling Tool - Frontend (FE) ([ICCV'23 Paper](https://arxiv.org/abs/2303.17595))
 
 [COCO](https://cocodataset.org) is a computer vision dataset with crowdsourced annotations. 
 For every object of interest in each image, there is an instance-wise segmentation along with its class label, as well as image-wide description (caption).
@@ -190,6 +190,11 @@ THE SOFTWARE.
 ## Citing our work
 
 ```
-Coming soon
+@inproceedings{han2023iccv,
+  title = {Neglected Free Lunch – Learning Image Classifiers Using Annotation Byproducts},
+  author = {Han, Dongyoon and Choe, Junsuk and Chun, Seonghyeok and Chung, John Joon Young and Chang, Minsuk and Yun, Sangdoo and Song, Jean Y. and Oh, Seong Joon},
+  booktitle = {International Conference on Computer Vision (ICCV)},
+  year = {2023}
+}
 ```
 
