@@ -9,9 +9,7 @@ The annotator is presented one image at a time and tags the present classes in t
 This "tagging" paradigm for class labelling is arguably one of the most popular approaches to put semantic labels on images.
 
 We open source the frontend (FE) modules for COCO class label annotation. Our FE is a reproduction of the original interface.
-This replicated annotation system has been useful for a couple of our internal research at [Naver AI Lab](https://github.com/naver-ai).
-I hope to share the internal research outputs soonish (throughout 2022).
-We open-source the FE before even publishing our papers in the hope that this tool will help other researchers and practitioners who wish to use the COCO annotation tool for their own projects and products.
+This replicated annotation system has been used for the [**Neglected Free Lunch**](https://github.com/naver-ai/NeglectedFreeLunch) project, published as an [**ICCV'23 Paper**](https://arxiv.org/abs/2303.17595).
 
 > Warning: The full annotation system works only when the backend is set up, which we do not support.
 > However, the repository contains sufficient information for configuring the BE on your own.
